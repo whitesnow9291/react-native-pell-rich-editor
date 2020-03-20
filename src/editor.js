@@ -136,6 +136,11 @@ const HTML = `
                     if (url) exec('createLink', url);
                 }
             },
+            linkexec: {
+                result: function(url) {
+                    exec('createLink', url);
+                }
+            },
             image: {
                 result: function(url) {
                     if (url) { exec('insertHTML', "<br><div><img src='"+ url +"'/></div><br>");}
